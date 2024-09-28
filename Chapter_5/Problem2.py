@@ -1,0 +1,21 @@
+s = set()
+
+
+words = input("Enter first number:")
+s.add(int(words))
+words = input("Enter second number:")
+s.add(int(words))
+words = input("Enter third number:")
+s.add(int(words))
+words = input("Enter fourth number:")
+s.add(int(words))
+words = input("Enter fifth number:")
+s.add(int(words))
+words = input("Enter sixth number:")
+s.add(int(words))
+words = input("Enter seventh number:")
+s.add(int(words))
+words = input("Enter eighth number:")
+s.add(int(words))
+
+print(s)
