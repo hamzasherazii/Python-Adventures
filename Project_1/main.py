@@ -4,19 +4,30 @@
 # -1 for water
 # 0 for gun
 
-computer = -1
+
+import random
+
+# computer = -1
+
+random_number = random.choice([1, -1, 0])
+
 youstr = input("Enter your choice: ")
 youDict = {"snake": 1, "water": -1, "gun": 0}
-
+reverseDict = {1: "snake", -1: "water", 0: "gun"}
 you = youDict[youstr]
 
-if(computer == -1 and you == 1):
+print(f"You chose {reverseDict[you]}\nComputer chose {reverseDict[random_number]}")
+
+
+
+
+if(random_number == -1 and you == 1):
     print("You win")
-elif(computer == 1 and you == 0):
+elif(random_number == -1 and you == 0):
     print("You win")
-elif(computer == 0 and you == -1):
+elif(random_number == 0 and you == -1):
     print("You win")
-elif(computer == you):
+elif(random_number == you):
     print("Draw")
 else:
     print("something went wrong")
